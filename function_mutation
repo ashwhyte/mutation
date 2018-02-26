@@ -1,0 +1,23 @@
+var isThere = true;
+
+function mutation(arr) {
+  
+  arr[0] = arr[0].toLowerCase();
+  arr[1] = arr[1].toLowerCase();
+  indexNum = 0;
+  checkArr = arr[1].split("");
+
+  
+  
+  for (var i = 0; i < checkArr.length; i++) {
+    
+    indexNum = arr[0].indexOf(checkArr[i], 0);
+    
+    if (indexNum < 0) {
+      break;
+    }
+  }
+  
+  return indexNum > 0;
+  //return arr[0].indexOf(checkArr[2], 0);
+}
